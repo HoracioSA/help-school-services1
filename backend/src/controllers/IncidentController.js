@@ -3,7 +3,7 @@ module.exports ={
     async index(request, response){
         const {page =1}=request.query;
         const [count] = await connection('incidents').count()
-        console.log(count)
+        
         const incidents= await connection('incidents')
         .join('universities','universities.id', '=', 'incidents.universities_id' )
         .limit(5)

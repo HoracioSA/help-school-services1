@@ -15,18 +15,22 @@ export default function Incidents(){
         navigation.navigate('Detail', {incident})
     }
     async function loadIncidents(){
+        // console.log('loadIncidents')
         if(loading){
             return;
         }
+        // console.log('first')
         if (total > 0 && incidents.length === total){
             return;
 
         }
+        // console.log('second')
         setLoading(true);
         // const response = await api.get(`incidents?page=${page}`);
         const response = await api.get('incidents',{
             params:{page}
         });
+        // console.log('response: ', page);
         setIncidents([...incidents, ...response.data]);
         setTotal(response.headers['x-total-count']);
         setPage(page + 1);
@@ -51,7 +55,8 @@ export default function Incidents(){
             keyExtractor={incident =>String(incident.id)}
             // showsVerticalScrollIndicator={true}
             onEndReached={loadIncidents}
-            onEndReachedThreshold={0.2}
+            onEndReachedThreshold={0.1}
+            initialNumToRender={5}
             renderItem={({item: incident})=>(
                 <View style={styles.incident}>
                     <Text style={styles.incidentProp}>University:NmeTau</Text>
