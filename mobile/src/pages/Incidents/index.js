@@ -48,7 +48,7 @@ export default function Incidents(){
                 </Text>
             </View>
             <Text style={styles.title}>Well Come</Text>
-            <Text style={styles.description}>Choose one of this cases and Solve it</Text>
+            <Text style={styles.description}>Choose one of this cases and help us</Text>
             <FlatList 
             data={incidents}
             style={styles.incidentList}
