@@ -5,4 +5,6 @@ Help-School is app for sharing dificulty of solving exercises/problem with subje
 ![home screen](frontend/src/assets/login.png)
 ![home screen](frontend/src/assets/profile.png)
 ## Gif
-![gif animatio](assets/profile.gif)
+![gif animatio](frontend/src/assets/web1.gif)
+![gif animatio](frontend/src/assets/web2.gif)
+![gif animatio](frontend/src/assets/web3.gif)
