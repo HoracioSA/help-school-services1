@@ -7,8 +7,6 @@ Help-School is app for sharing dificulty of solving exercises/problem with subje
 ![gif animatio](frontend/src/assets/web1.gif)
 ![gif animatio](frontend/src/assets/web3.gif)
 ## Mobile version
-![home screen](mobile/assets/contact.png)
-![home screen](mobile/assets/home.png)
 ![home screen](mobile/assets/home.gif)
 
 
