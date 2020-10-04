@@ -45,10 +45,6 @@ Routes.post('/incidents',celebrate({
     value:Joi.number().required()  
     })
 }), IncidentController.create);
-Routes.delete('/incidents/:id',celebrate({
-[Segments.PARAMS]:Joi.object().keys({
-    id:Joi.number().required(),
-})
-}), IncidentController.delete);
+Routes.delete('/incidents/:id', IncidentController.delete);
 
 module.exports = Routes;
