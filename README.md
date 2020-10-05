@@ -10,9 +10,9 @@ Help-School is app for sharing dificulty of solving exercises/problem with subje
 ![home screen](mobile/assets/home.gif)
 
 ## Technology
--- Nodejs
--- Express
--- Typescript
--- React
--- Expo
+- Nodejs
+- Express
+- Typescript
+- React
+- Expo
 
